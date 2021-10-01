@@ -18,21 +18,15 @@ install(FILES
 )
 
 install(FILES
-    gyro.conf
+    ${CMAKE_INSTALL_PREFIX}/var/lib/gyro/gyro.conf
     DESTINATION /var/lib/gyro
-)
-
-install(FILES
-    ${CMAKE_CURRENT_SOURCE_DIR}/postinst/gyrod
-    DESTINATION /etc/init.d
-  	PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
 )
 
 set(DEB_PACKAGE_NAME ${CMAKE_PROJECT_NAME})
 set(DEB_PACKAGE_VERSION "0.1.0")
 set(DEB_PACKAGE_COMMIT "release")
 set(DEB_PACKAGE_SECTION "internet")
-set(DEB_PACKAGE_DEPENDS "libc6, libsodium23, libssl1.1, libhidapi-libusb0, libstdc++6, libreadline8, libunbound8, libgcrypt20, libgcc-s1, libczmq4")
+set(DEB_PACKAGE_DEPENDS "libzmq5;libczmq4;libunbound2;libsodium23;libunwind8;liblzma5;libreadline7;libldns2;libexpat1;graphviz;libpgm-5.2-0;libhidapi-hidraw0;libhidapi-libusb0;libprotobuf-c1")
 set(DEB_PACKAGE_DESRCIPTION "gyrod")
 set(DEB_PACKAGE_MAINTAINER "Staroy <staroy@pm.me>")
 set(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA "${CMAKE_CURRENT_SOURCE_DIR}/postinst/postinst")
