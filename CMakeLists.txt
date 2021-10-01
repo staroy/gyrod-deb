@@ -18,7 +18,7 @@ install(FILES
 )
 
 install(FILES
-    ${CMAKE_INSTALL_PREFIX}/var/lib/gyro/gyro.conf
+    gyro.conf
     DESTINATION /var/lib/gyro
 )
 
