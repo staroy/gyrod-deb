@@ -22,6 +22,11 @@ install(FILES
     DESTINATION /var/lib/gyro
 )
 
+install(FILES
+    postinst/gyrod
+    DESTINATION /etc/init.d
+)
+
 set(DEB_PACKAGE_NAME ${CMAKE_PROJECT_NAME})
 set(DEB_PACKAGE_VERSION "0.1.0")
 set(DEB_PACKAGE_COMMIT "release")
