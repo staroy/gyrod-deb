@@ -14,7 +14,7 @@ NAME="gyrod"
 PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
 APPDIR="/var/lib/gyro"
 APPBIN="/usr/bin/gyrod"
-APPARGS="--config-file /var/lib/gyro/gyro.conf --data-dir /var/lib/gyro/data --detach --pidfile /var/run/$NAME.pid"
+APPARGS="--config-file /var/lib/gyro/gyro.conf --data-dir /var/lib/gyro/data --detach --pidfile /var/run/$NAME.pid --rpc-bind-ip 0.0.0.0 --rpc-ssl disabled --confirm-external-bind --add-peer 62.109.21.129 --add-peer 188.120.236.67"
 USER="root"
 GROUP="root"
 
