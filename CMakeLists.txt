@@ -18,13 +18,14 @@ install(FILES
 )
 
 install(FILES
-    gyro.conf
-    DESTINATION /var/lib/gyro
+    postinst/gyrod
+    DESTINATION /etc/init.d
+  	PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
 )
 
 install(FILES
-    postinst/gyrod
-    DESTINATION /etc/init.d
+    gyro.conf
+    DESTINATION /var/lib/gyro
 )
 
 set(DEB_PACKAGE_NAME ${CMAKE_PROJECT_NAME})
