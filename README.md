@@ -6,7 +6,6 @@ Build:
 ```
 
 Install:
-in path tmp/gyrod-deb-release
 ```
 sudo apt install libzmq5 libczmq4 libunbound2 libsodium23 libunwind8 liblzma5 libreadline7 \
          libldns2 libexpat1 libpgm-5.2-0 libhidapi-hidraw0 libhidapi-libusb0 libprotobuf-c1
