@@ -30,9 +30,9 @@ install(FILES
 
 set(DEB_PACKAGE_NAME ${CMAKE_PROJECT_NAME})
 set(DEB_PACKAGE_VERSION "0.1.0")
-set(DEB_PACKAGE_COMMIT "release")
+set(DEB_PACKAGE_COMMIT "ubuntu-18.04")
 set(DEB_PACKAGE_SECTION "internet")
-set(DEB_PACKAGE_DEPENDS "libzmq5;libczmq4;libunbound2;libsodium23;libunwind8;liblzma5;libreadline7;libldns2;libexpat1;graphviz;libpgm-5.2-0;libhidapi-hidraw0;libhidapi-libusb0;libprotobuf-c1")
+set(DEB_PACKAGE_DEPENDS "libzmq5;libczmq4;libunbound2;libsodium23;libunwind8;liblzma5;libreadline7;libldns2;libexpat1;libpgm-5.2-0;libhidapi-hidraw0;libhidapi-libusb0;libprotobuf-c1")
 set(DEB_PACKAGE_DESRCIPTION "gyrod")
 set(DEB_PACKAGE_MAINTAINER "Staroy <staroy@pm.me>")
 set(CPACK_DEBIAN_PACKAGE_CONTROL_EXTRA "${CMAKE_CURRENT_SOURCE_DIR}/postinst/postinst")
