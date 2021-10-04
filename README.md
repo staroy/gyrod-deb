@@ -2,7 +2,7 @@
 
 Build:
 ```
-gyrod-deb-release.sh
+./gyrod-deb-release.sh
 ```
 
 Install:
